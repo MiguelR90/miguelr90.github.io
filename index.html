@@ -49,7 +49,7 @@ function datafold(json) {
 var myViz = d3plus.viz()
     .container("#viz")
     .type("scatter")
-    .data("http://api.datausa.io/api/?show=geo&sumlevel=state&required=grads_hawaiian,grads_men,grads_women,geo&year=latest", datafold)
+    .data("data.json", datafold)
     .id("geo")
     .size("grads_hawaiian")
     .x("grads_men")
